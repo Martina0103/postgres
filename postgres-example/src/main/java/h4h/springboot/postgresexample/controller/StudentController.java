@@ -23,7 +23,7 @@ public class StudentController {
 
     @PostMapping("/students/exceptions")
     public @ResponseBody
-    Student save(@RequestBody Student student) throws IOException {
+    Student save(@RequestBody Student student) {
         return studentService.save(student);
     }
 
